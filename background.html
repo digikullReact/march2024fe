@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            background-color: aqua;
+            height: 200px;
+
+        }
+
+        #bdiv{
+            height: 200px;
+            overflow:auto; /*It should make the content limit inside the container thats the whole point of overflow :auto*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:scroll; /*Only content scrolls not image*/
+            /* background-attachment:local; /* content and image both  scrolls */
+                   /* background-attachment:fixed; /* content moves only */
+            background-image: url("https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/7cac5455bc76f32a.jpg?q=20");
+        }
+
+        #jdiv{
+            width: 300px;
+            height: 150px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: auto;
+            white-space: nowrap; /*instructs browser to avoid wrapping text into multiple lines*/
+        }
+
+       
+
+
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div id="mydiv">
+        <h1>Hello world</h1>
+
+
+    </div>
+
+    <div id="bdiv">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatum repellendus voluptates nisi quos non pariatur corporis veritatis quis illo eaque commodi adipisci quaerat facere, earum optio in! Maxime, ut?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis sequi consequuntur voluptatum maiores dolorum voluptatibus quae tempora, repellat animi atque autem! Animi itaque alias beatae voluptatem magnam, deleniti cumque?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis sequi consequuntur voluptatum maiores dolorum voluptatibus quae tempora, repellat animi atque autem! Animi itaque alias beatae voluptatem magnam, deleniti cumque?</p>
+    
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis sequi consequuntur voluptatum maiores dolorum voluptatibus quae tempora, repellat animi atque autem! Animi itaque alias beatae voluptatem magnam, deleniti cumque?</p>
+    
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis sequi consequuntur voluptatum maiores dolorum voluptatibus quae tempora, repellat animi atque autem! Animi itaque alias beatae voluptatem magnam, deleniti cumque?</p>
+    
+
+
+
+
+
+</div>
+
+
+<div id="jdiv">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure, fuga harum quod nostrum consectetur ipsa inventore eveniet totam voluptas blanditiis veniam aperiam porro! Illum repudiandae voluptas vel vero dolore.
+    </p>
+
+</div>
+
+
+</section>
+    
+</body>
+</html>
