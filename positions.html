@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*By default position is static ,and it means that the element will be shown on the browser
+        the way they are mentioned in your html document
+        */
+
+        .parent{
+            
+            height: 500vh;
+
+        }
+
+        .parent2{
+            position: relative;
+        }
+  /*
+        .child-one{
+         
+           position: relative;
+           /* top:10px;*/
+               /*changes position where it should be normally in static position ,other elements
+               donot get pushed because this element with position relative has been removed from the document flow
+               
+               
+        }
+        */
+
+          
+        .child-one{
+            position: absolute; 
+            /*position fixed makes sure that the position of element is fixed 
+            irespective of conatiner size 
+            it will be fixed at the same position even if you are scrolling
+            */
+
+         
+           /*  position: absolute;  when you use position as absolute ,then by default it takes
+           top bottom or left ,right values from the document main html tag
+           if you want that top ,bottom left values to be considered from 
+
+           the parent container then you have to give parent container 
+           relative position
+           */
+
+           top:0px
+        }
+        
+
+
+        .parent{
+            padding: 5px;
+            background-color: #00aaff;
+        }
+
+        .child{
+            padding: 5px;
+        }
+
+        .child-one{
+            background-color: rgb(116,255,116);
+        }
+        .child-two{
+            background-color: rgb(248,117,117);
+        }
+        .child-three{
+            background-color: rgb(255,116,232);
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="parent2">
+     Main Parent
+
+     <div class="parent">
+        Parent
+
+        <div class="child-one child" >
+         One
+        </div>
+        <div class="child-two child">
+         Two
+        </div>
+        <div class="child-three child">
+           Three
+        </div>
+
+    </div>
+    </div>
+  
+
+    
+</body>
+</html>
